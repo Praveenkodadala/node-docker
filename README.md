@@ -9,14 +9,14 @@ Docker is a platform used for developing, shipping, and running applications as 
 **Docker Files -- Build -> Container Image (Docker Image) <- Push/Pull -> Registry**
 
 **Docker to create container steps:**
--use an existing base image or a Docker file.
--issue *BUILD command that creates a container image with a name.
--issue the *PUSH command to store the container image to registry.
--the host first checks locally if the image is already available.
--then issues the *RUN command with the image name to create the container.
--if the image is unavailable with in the host, the docker client connects to the registry and pulls the image to the host.
--the deamon then create a running container using the image.
 
+- Use an existing base image or a Docker file.
+- Issue the `docker build` command that creates a container image with a name.
+- Issue the `docker push` command to store the container image to the registry.
+- The host first checks locally if the image is already available.
+- Then issues the `docker run` command with the image name to create the container.
+- If the image is unavailable within the host, the Docker client connects to the registry and pulls the image to the host.
+- The daemon then creates a running container using the image.
 
 
 
