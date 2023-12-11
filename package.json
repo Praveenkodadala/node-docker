@@ -1,0 +1,16 @@
+{
+  "name": "node-app-in-docker",
+  "version": "0.0.0",
+  "description": "TypeScript + Mongoose + MongoDB + Express API Server",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node --experimental-modules server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
